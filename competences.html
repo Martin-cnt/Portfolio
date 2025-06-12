@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mon Portfolio - Savoir et Savoir-faire</title>
+    <link rel="stylesheet" href="comp.css" />
+    <link rel="icon" type="image/svg+xml" href="images/icon.png" />
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="competences.html" class="active">Savoir et Savoir-faire</a>
+            <a href="apropos.html">À propos de moi</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>UE 4 – Gérer des données de l'information</h2>
+       <div class="content">
+        <div class="image-section">
+            <figure>
+                <img src="images/menu_client.png" alt="menu client">
+                <figcaption><i>Figure 1 – Menu client du site d'e-commerce Jean Xtreme.</i></figcaption>
+            </figure>
+            
+            <p>La figure ci-dessous présente une capture d’écran du menu client de notre site e-commerce, réalisé en Python avec le framework Flask, connecté à une base de données SQL. Cette interface permet à un client connecté de consulter la liste des articles disponibles, avec la possibilité de rechercher un produit par nom, de filtrer par type (slim, droit, large, etc.) ou encore par tranche de prix.<br><br>
+Cette figure illustre concrètement une interaction entre une interface web et une base de données relationnelle. L’objectif était de permettre à l’utilisateur final d’accéder efficacement à des données stockées dans la base, selon des critères dynamiques. Pour cela, j’ai mis en œuvre plusieurs savoirs essentiels en base de données : la création de requêtes SQL avec conditions multiples, la gestion des paramètres d’URL ou de formulaire, et l’extraction filtrée des données via des requêtes paramétrées.<br><br>
+La partie visible ici est le résultat d’un traitement côté serveur qui récupère les filtres sélectionnés par l’utilisateur (types, mots-clés, prix), les intègre dans une requête SQL conditionnelle, puis affiche dynamiquement les articles correspondants. Le filtrage s’appuie sur une combinaison de clauses WHERE, LIKE, BETWEEN et IN, construites de manière à sécuriser les données tout en gardant un comportement fluide.<br><br>
+Cette mise en œuvre mobilise également des savoir-faire techniques : j’ai conçu une route Flask liée à un formulaire HTML, capable d’envoyer les critères en GET ou POST. Le backend interprète ces données pour formuler dynamiquement la requête adaptée. De plus, j'ai implémenté un système d'authentification et de gestion de sessions pour les utilisateurs, assurant que chaque client connecté puisse accéder à un espace personnalisé et sécurisé. Cela inclut l'utilisation de cookies et de tokens pour maintenir les sessions utilisateur de manière sécurisée.<br><br>
+Cette partie du projet m’a permis de travailler sur la structuration de données, l'optimisation des requêtes, et la logique métier côté serveur.<br><br>
+La trace démontre ainsi ma capacité à lier interface utilisateur, logique applicative et accès aux données, en respectant les standards du développement web. Elle illustre plusieurs compétences liées à l’UE 4, notamment les savoir et savoir faire suivant :</p>
+                <ul>
+                    <li> La gestion de données relationnelles </li>
+                    <li> La Gestion de Sessions et Authentification   </li>
+                    <li>Savoir manipuler une base de donnée  </li>
+                    <li>L'utilisation du SQL pour interagir avec la base de données</li>
+                </ul>
+        </div> <br>
+
+        <div class="image-section">
+            <figure>
+                <img src="images/liste-envie.png" alt="menu client">
+                <figcaption><i>Figure 2 – Liste d'envie et historique d'un client du site JNX.</i></figcaption>
+            </figure>
+            <p>La figure ci-dessous présente une capture d’écran du menu client de notre site e-commerce, illustrant la gestion des listes d'envies et des articles consultés. Cette interface, développée en Python avec le framework Flask et connectée à une base de données SQL, permet aux clients de gérer leurs articles préférés et de consulter leur historique de navigation.<br><br>
+Cette figure illustre concrètement l'implémentation de mécanismes pour stocker et récupérer des informations, ainsi que l'utilisation d'une base de données relationnelle. L'objectif était de permettre à l'utilisateur final de gérer et manipuler des données dynamiques, offrant ainsi une expérience utilisateur enrichie et personnalisée. Pour cela, j'ai mis en œuvre plusieurs savoirs essentiels en gestion de données, notamment la manipulation de listes personnalisées et l'historique de consultation. <br><br>
+La partie visible ici montre comment les utilisateurs peuvent ajouter des articles à leur liste d'envies, consulter les détails des produits, et voir les derniers articles consultés. Cela implique une gestion efficace des sessions utilisateur et une interaction fluide avec la base de données pour récupérer et afficher les informations pertinentes. Pour stocker et récupérer ces informations, j'ai utilisé un Modèle Conceptuel de Données (MCD) pour structurer les tables de la base de données, permettant ainsi une organisation claire et efficace des données. Les relations entre les tables, telles que celles entre les utilisateurs, les articles et les listes d'envies, sont définies pour assurer l'intégrité et la cohérence des données.<br><br>
+L'utilisation du SQL a été essentielle pour interagir avec la base de données. J'ai conçu des requêtes SQL pour récupérer les articles de la liste d'envies et l'historique de consultation de l'utilisateur. Ces requêtes utilisent des clauses WHERE pour filtrer les résultats, des jointures pour combiner les données de plusieurs tables, et des requêtes paramétrées pour sécuriser les interactions avec la base de données. Par exemple, pour récupérer les articles d'une liste d'envies, une requête SQL avec une jointure entre les tables des articles et des listes d'envies est utilisée.<br><br>
+Cette mise en œuvre mobilise également des savoir-faire techniques pour concevoir des requêtes SQL optimisées, assurant des performances rapides et une expérience utilisateur fluide. Cette partie du projet m'a permis de travailler sur la structuration de données, l'optimisation des requêtes, et la logique métier côté serveur. <br><br>
+La trace démontre ainsi ma capacité à lier interface utilisateur, logique applicative et accès aux données, en respectant les standards du développement web. Elle illustre plusieurs compétences liées à l'UE 4, notamment : </p>
+                <ul>
+                    <li> L'implémentation de mécanismes pour stocker et récupérer des informations </li>
+                    <li>L'utilisation d'une base de données relationnelle  </li>
+                    <li>la conception de Modèles Conceptuels de Données (MCD) </li>
+                    <li>L'utilisation du SQL pour interagir avec la base de données et manipuler les données</li>
+                </ul>
+        </div> <br><br>
+        
+        <h2>UE 1 – Réaliser un développement d’application</h2>
+        <div class="image-section">
+            
+            <figure>
+                <img src="images/QuixoComm.png" alt="Quixo commande">
+                <figcaption><i>Figure 3 – Jeu Quixo en version commande dans un terminal</i></figcaption>
+            </figure>
+            <p>La figure ci-dessous présente une capture d’écran de l’application Quixo que j’ai développée en Java avec l’environnement de développement IntelliJ IDEA. Cette interface correspond à la logique de contrôle et d’affichage du jeu Quixo, mettant en œuvre une interaction entre l’utilisateur, l’interface graphique, et le moteur de décision du jeu. Ici, l’ordinateur (joueur IA) effectue un tour, ce qui déclenche une série de traitements, allant de l’analyse du plateau jusqu’au rendu visuel du coup joué.<br><br>
+Cette figure illustre concrètement une interaction entre une logique métier orientée objet et une interface graphique Java. L’objectif était de permettre à un joueur virtuel de prendre des décisions selon l’état du plateau, puis de représenter ces décisions à travers des mouvements graphiques dynamiques. Pour cela, j’ai mobilisé plusieurs savoirs essentiels : la conception d’un contrôleur (QuixoController) pour centraliser les actions, l’exploitation de l’API graphique Swing/AWT pour le rendu du plateau, et l’intégration d’une intelligence artificielle pour déterminer le coup optimal.<br><br>
+Le développement repose sur une architecture orientée objet, dans laquelle l’héritage a été utilisé pour favoriser la réutilisabilité et la clarté du code. Par exemple, la classe QuixoController hérite d’une classe Controller plus générique, ce qui permet de spécialiser le comportement pour le jeu Quixo tout en conservant une structure commune pour d'autres jeux. De même, les éléments graphiques comme les pions ou le plateau utilisent des classes abstraites ou génériques dont les sous-classes redéfinissent les comportements spécifiques (rendu, interaction). Cela m’a permis de factoriser le code, de simplifier la maintenance, et de respecter les principes de la programmation orientée objet.<br><br>
+La partie visible ici est le résultat d’un enchaînement d’appels entre les différentes classes de l’architecture MVC (Modèle-Vue-Contrôleur). Le contrôleur appelle la méthode playTurn, identifie le joueur courant (ici l’ordinateur), récupère les meilleures coordonnées possibles, et met à jour dynamiquement l’interface utilisateur . Le moteur de décision évalue chaque coup à l’aide d’un système de score, permettant à l’IA de choisir l’action la plus favorable.<br><br>
+Cette mise en œuvre mobilise également des savoir-faire techniques avancés : j’ai développé des tests unitaires avec JUnit afin de valider le bon fonctionnement des méthodes critiques (évaluation de score, détection de victoire, génération de coups). Ces tests m’ont permis de vérifier la robustesse du code, d’éviter les régressions, et de garantir la stabilité globale de l’application tout au long de son évolution.<br><br>
+Cette partie du projet m’a permis de travailler en profondeur sur la structuration de classes, l’héritage, la gestion d’événements utilisateurs, l’intelligence artificielle et la validation fonctionnelle du code.<br><br>
+La trace démontre ainsi ma capacité à lier interface graphique, logique métier orientée objet, principes de l’héritage, validation logicielle et prise de décision automatisée. Elle illustre plusieurs compétences liées à l’UE 1, notamment les savoirs et savoir-faire suivants :</p>
+                <ul>
+                    <li>  L’usage de l’héritage pour spécialiser et structurer le code</li>
+                    <li>  La mise en œuvre d’une architecture MVC</li>
+                    <li>Avoir une logique de développement d'algorithme </li>
+                    <li>La conception de tests unitaires pour garantir la fiabilité </li>
+                    <li>L’utilisation de IDEA (IntelliJ) pour coder, tester et déboguer efficacement</li>
+                </ul>
+        </div> <br>
+        <div class="image-section">
+            <figure>
+                <img src="images/QuixoGrahique.png" alt="Quixo graphique" class="petite-image">
+                <figcaption><i>Figure 4 – Jeu Quixo en version interface graphique.</i></figcaption>
+            </figure>
+            <p>La figure ci-dessous montre une capture d’écran de l’interface graphique principale de mon application Java pour le jeu Quixo, développée dans le cadre de l’UE 1 – Réaliser un développement d’application. Cette interface représente visuellement le plateau de jeu en 5x5, avec une disposition claire des lignes et colonnes (A à E, 1 à 5) ainsi que des indications visuelles sur le joueur actif (ici, player1, représenté par un carré violet).<br><br>
+Cette interface a été conçue à l’aide de la bibliothèque Boardifier, un framework Java spécialisé dans la création de jeux de société en 2D. Cette bibliothèque m’a permis de structurer l’affichage sous forme de grille logique, en dissociant les entités de jeu (cases, pions, pot) et leur rendu graphique. Elle offre une infrastructure puissante pour gérer les entités graphiques, les animations, les coordonnées, et les interactions utilisateur sans repartir de zéro.<br><br>
+Grâce à Boardifier, j’ai pu rapidement définir une représentation graphique cohérente du plateau, gérer les bordures dynamiques, et organiser les éléments de jeu selon une logique modulaire. L'intégration de cette bibliothèque m’a permis de me concentrer sur la logique métier (comme les règles du jeu ou le comportement des joueurs) tout en bénéficiant d’un rendu visuel professionnel.<br><br>
+En parallèle, j’ai développé des composants spécifiques pour enrichir l’expérience utilisateur : gestion du tour joueur, retour visuel sur les actions, et mise à jour en temps réel de l’interface après chaque action. J’ai également implémenté une communication fluide entre le modèle de jeu et la vue (architecture MVC), facilitée par les abstractions offertes par Boardifier.<br><br>
+Cette partie du projet m’a permis de mettre en œuvre des savoir-faire complémentaires à ceux utilisés dans la logique de jeu et les tests unitaires. Notamment :</p>
+                <ul>
+                    <li> L’utilisation d’un framework spécialisé (Boardifier) pour le développement graphique </li>
+                    <li>La modélisation graphique d’un plateau de jeu et de ses entités </li>
+                    <li>L’utilisation du polymorphisme pour adapter et spécialiser les classes du framework Boardifier, en redéfinissant certaines méthodes dans des sous-classes.</li>
+                </ul>
+        </div> <br><br>
+    </div>
+    </main>
+
+    <footer class="sticky-footer">
+        <p>&copy; 2025 Martin Cuinet</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Quixo</title>
+  <link rel="stylesheet" href="capge.css">
+  <link rel="icon" type="image/svg+xml" href="images/icon.png" />
+</head>
+<body class="index-body">
+
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="competences.html">Savoir et Savoir-faire</a>
+      <a href="apropos.html">À propos de moi</a>
+    </nav>
+  </header>
+  <a href="projets.html" class="retour-haut">
+    &#8592; Retour aux projets
+  </a>
+
+  <div class="text-overlay">Quixo</div>
+
+  <main>
+    <section class="zigzag left">
+      <div class="content">
+        <h2>Notre projet</h2>
+        <p>Nous avons développé le jeu nommé Quixo en version commande dans un terminal, puis en version graphique. </p>
+      </div>
+      <img src="images/vocoder.jpg" alt="Histoire Capgemini" class="vertical">
+    </section>
+
+    <section class="zigzag right">
+      <img src="images/Board.png" alt="Économie Capgemini" class="vertical">
+      <div class="content">
+        <h2>Boardifier</h2>
+        <p> Pour jouer en interface graphique, nous avons utilisé Boardifier pour concevoir le plateau et les pions dans l'interface graphique. Il est ainsi possible de jouer exclusivemment en clickant avec la souris, et plus avec des commandes dans un terminal. </p>
+      </div>
+    </section>
+
+    <section class="zigzag left">
+      <div class="content">
+        
+        <h2>Les 2 IAs</h2>
+        <p>Nous avons conçu 2 IA capable de jouer contre un joueur humain, ou contre l'autre IA. La première IA adopte une stratégie défensive qui bloque le joueur dès qu'il possède une ligne de plus de 3 pions, sinon elle joue toujours au même endroit.  </p>
+        <p> La deuxième IA adopte une stratégie principalement d'attaque. Elle analyse le plateau et les coups possibles, et grâce à des coefficients, elle joue le meilleur coup possible. Elle essaye de créer des lignes de 5 et ainsi gagner, tout en bloquant le joueur si il a la possibilité de gagner.</p>
+      </div>
+      <img src="images/comm.png" alt="Activité Capgemini" class="vertical">
+    </section>
+
+    <main class="index-main">
+        <h2>Ce que j'ai appris</h2>
+        <p>Grâce à ce projet, j ai appris à travailler en groupe, à utiliser JavaFX et Boardifier dans IDEA, mais aussi à faire des tests unitaires</p>
+    </section>
+  </main>
+
+  <footer class="sticky-footer">
+    <p>&copy; 2025 Martin Cuinet</p>
+  </footer>
+
+</body>
+</html>

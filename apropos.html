@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos de moi - Martin Cuinet</title>
+  <link rel="stylesheet" href="apropos.css" />
+  <link rel="icon" type="image/svg+xml" href="images/icon.png" />
+</head>
+<script>
+  window.addEventListener('load', () => {
+    document.querySelectorAll('.niveau').forEach(bar => {
+      const width = bar.style.width;
+      bar.style.width = '0';
+      setTimeout(() => {
+        bar.style.width = width;
+      }, 300);
+    });
+  });
+</script>
+<body class="index-body">
+  <header>
+    <h1>Mon Portfolio</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Savoir et Savoir-faire</a>
+      <a href="apropos.html" class="active">À propos de moi</a>
+    </nav>
+  </header>
+
+  <main class="index-main">
+    <h2>À propos de moi</h2>
+
+    <div class="contenu">
+      <div class="infos">
+        <div class="info-bloc">
+          <span class="label">Prénom :</span> Martin
+        </div>
+        <div class="info-bloc">
+          <span class="label">Nom :</span> CUINET
+        </div>
+        <div class="info-bloc">
+          <span class="label">Âge :</span> 19 ans
+        </div>
+        <div class="info-bloc">
+          <span class="label">Niveau d’étude actuel :</span> BUT Informatique — 1ère année
+        </div>
+      </div>
+
+      <div class="box-coordonnees">
+        <h3>Mes coordonnées</h3>
+        <ul>
+          <li><strong>Email :</strong> martincuinet2006@gmail.com</li>
+          <li><strong>Adresse :</strong> 5 Rue du Bois Lassus, Chavanne (70400)</li>
+          <li><strong>Téléphone :</strong> 06 33 81 44 36</li>
+          <li><strong>GitHub :</strong> <a href="https://github.com/Martin-cnt/Projet_informatique" target="_blank">Martin-cnt</a></li>
+        </ul>
+      </div>
+    </div>
+   <div class="competences">
+      <h3>Langages maîtrisés</h3>
+      <div class="competence-bar">
+        <label>Java</label>
+        <div class="bar"><div class="niveau" style="width: 90%;"></div></div>
+      </div>
+      <div class="competence-bar">
+        <label>SQL</label>
+        <div class="bar"><div class="niveau" style="width: 80%;"></div></div>
+      </div>
+      <div class="competence-bar">
+        <label>Python</label>
+        <div class="bar"><div class="niveau" style="width: 70%;"></div></div>
+      </div>
+      <div class="competence-bar">
+        <label>HTML/CSS</label>
+        <div class="bar"><div class="niveau" style="width: 85%;"></div></div>
+      </div>
+      <div class="competence-bar">
+        <label>Langage C</label>
+        <div class="bar"><div class="niveau" style="width: 50%;"></div></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="passions">
+      <h3>Mes passions</h3>
+      <p>
+        Passionné d’informatique, de jeux vidéo et de football depuis toujours, je consacre une grande partie de mon temps libre à ces centres d’intérêt.
+        Je joue au football en club depuis plus de 12 ans, ce qui fait partie intégrante de mon quotidien.
+        J’aime aussi explorer de nouveaux contenus en ligne, découvrir des créateurs, et suivre l’actualité tech et gaming.
+      </p>
+    </div>
+  </main>
+
+  <footer class="sticky-footer">
+    <p>&copy; 2025 Martin Cuinet</p>
+  </footer>
+</body>
+</html>
