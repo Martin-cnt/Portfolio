@@ -52,7 +52,6 @@
 
 .text-overlay {
     padding: 2rem;
-    
     color: blue;
     font-size: 40px;
     font-weight: bold;
@@ -88,10 +87,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #f0f4f8, #e2e8f0);
-        display: flex;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
 main {
