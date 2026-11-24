@@ -3,6 +3,7 @@ import { ref } from 'vue'
 
 const menuOpen = ref(false)
 const cvUrl = '/Portfolio/CUINET_Martin_CV.pdf'
+const photoUrl = `${import.meta.env.BASE_URL}Photo_CV.jpg`
 
 const projects = [
   {
@@ -84,7 +85,9 @@ function closeMenu() {
           </div>
         </div>
         <div class="hero-card" aria-label="Présentation rapide">
-          <div class="avatar"><img src="/Portfolio/public/Photo_CV.jpg" alt="photo de profil" /></div>
+          <div class="avatar">
+            <img :src="photoUrl" alt="Photo de Martin Cuinet" />
+          </div>
           <p class="quote">« La simplicité est la sophistication suprême. »</p>
           <p class="availability"><span></span> Disponible pour un stage / une alternance</p>
         </div>
