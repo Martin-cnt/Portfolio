@@ -47,7 +47,7 @@ function closeMenu() {
 <template>
   <header class="site-header">
     <nav class="nav container" aria-label="Navigation principale">
-      <a class="brand" href="#accueil" @click="closeMenu">Prénom <span>Nom</span></a>
+      <a class="brand" href="#accueil" @click="closeMenu">Martin <span>CUINET</span></a>
       <button
         class="menu-button"
         type="button"
@@ -69,10 +69,9 @@ function closeMenu() {
   </header>
 
   <main id="contenu">
-    <section id="accueil" class="hero section">
+    <section id="accueil" class="hero-section">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Portfolio 2026 · Développement web</p>
           <h1>Je crée des expériences web <em>claires et utiles.</em></h1>
           <p class="hero-text">
             Bonjour, je suis <strong>Prénom Nom</strong>, étudiant·e en informatique.
@@ -80,7 +79,7 @@ function closeMenu() {
           </p>
           <div class="actions">
             <a class="button button-primary" href="#projets">Découvrir mes projets</a>
-            <a class="button button-secondary" href="/cv.pdf" download>Télécharger mon CV <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="/CUINET_Martin_CV.pdf" download>Télécharger mon CV <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div class="hero-card" aria-label="Présentation rapide">
@@ -187,7 +186,7 @@ function closeMenu() {
           </div>
         </div>
         <form class="contact-form" @submit.prevent>
-          <label for="name">Nom</label>
+          <label for="name">Nom Prénom</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required />
           <label for="email">Adresse e-mail</label>
           <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@email.com" required />
@@ -202,7 +201,7 @@ function closeMenu() {
 
   <footer class="footer">
     <div class="container footer-content">
-      <span>© 2026 Prénom Nom</span>
+      <span>© 2026 Martin CUINET</span>
       <a href="#accueil">Retour en haut ↑</a>
     </div>
   </footer>
