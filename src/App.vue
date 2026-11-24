@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 const menuOpen = ref(false)
+const cvUrl = `${import.meta.env.BASE_URL}CUINET_Martin_CV.pdf`
 
 const projects = [
   {
@@ -79,7 +80,7 @@ function closeMenu() {
           </p>
           <div class="actions">
             <a class="button button-primary" href="#projets">Découvrir mes projets</a>
-            <a class="button button-secondary" href="/CUINET_Martin_CV.pdf" download>Télécharger mon CV <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" :href="cvUrl" download>Télécharger mon CV <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div class="hero-card" aria-label="Présentation rapide">
