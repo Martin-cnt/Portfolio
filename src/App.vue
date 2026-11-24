@@ -84,7 +84,7 @@ function closeMenu() {
           </div>
         </div>
         <div class="hero-card" aria-label="Présentation rapide">
-          <div class="avatar">PN</div>
+          <div class="avatar"><img src="/Portfolio/public/Photo_CV.jpg" alt="photo de profil" /></div>
           <p class="quote">« La simplicité est la sophistication suprême. »</p>
           <p class="availability"><span></span> Disponible pour un stage / une alternance</p>
         </div>
