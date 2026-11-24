@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const menuOpen = ref(false)
-const cvUrl = `${import.meta.env.BASE_URL}CUINET_Martin_CV.pdf`
+const cvUrl = '/Portfolio/CUINET_Martin_CV.pdf'
 
 const projects = [
   {
