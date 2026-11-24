@@ -74,10 +74,12 @@ function closeMenu() {
     <section id="accueil" class="hero-section">
       <div class="container hero-grid">
         <div>
-          <h1>Je crée des expériences web <em>claires et utiles.</em></h1>
+          <h1>
+            <span class="hero-name">Martin Cuinet</span>
+            <em>Étudiant en informatique</em>
+          </h1>
           <p class="hero-text">
-            Bonjour, je suis <strong>Prénom Nom</strong>, étudiant·e en informatique.
-            Je transforme des idées en interfaces accessibles, rapides et agréables à utiliser.
+            <strong>Bienvenue sur mon portfolio !</strong> J'aime développer des applications, des sites web et des programmes qui répondent à un vrai besoin.
           </p>
           <div class="actions">
             <a class="button button-primary" href="#projets">Découvrir mes projets</a>
@@ -88,30 +90,44 @@ function closeMenu() {
           <div class="avatar">
             <img :src="photoUrl" alt="Photo de Martin Cuinet" />
           </div>
-          <p class="quote">« La simplicité est la sophistication suprême. »</p>
-          <p class="availability"><span></span> Disponible pour un stage / une alternance</p>
+          <div class="profile-facts" aria-label="Quelques informations sur moi">
+            <p class="profile-fact">
+              <span class="profile-icon" aria-hidden="true"><span class="profile-icon-glyph">🏠</span></span>
+              <span><small>Ville</small>Belfort</span>
+            </p>
+            <p class="profile-fact">
+              <span class="profile-icon" aria-hidden="true"><span class="profile-icon-glyph">🎓</span></span>
+              <span><small>Études</small>BUT informatique</span>
+            </p>
+            <p class="profile-fact">
+              <span class="profile-icon" aria-hidden="true"><span class="profile-icon-glyph">🎮</span></span>
+              <span><small>Centres d’intérêt</small>Football · Jeux vidéo · Jeux de société</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="a-propos" class="section section-light">
       <div class="container two-columns">
-        <div>
+        <div class="etape2">
           <p class="eyebrow">01 · À propos</p>
-          <h2>Un profil curieux, attentif et orienté solution.</h2>
+          <h2>Un peu plus sur moi</h2>
         </div>
         <div class="prose">
           <p>
-            Je suis actuellement en formation dans le domaine de l’informatique et je recherche
-            une opportunité pour progresser au contact d’une équipe.
+            Étudiant en 3ᵉ année de BUT Informatique, j'aime comprendre un besoin et le transformer en application ou en site simple à utiliser. 
+            Je fais attention à la qualité du code et à l'accessibilité.
           </p>
           <p>
-            J’aime comprendre les besoins, organiser une idée et la rendre concrète avec une
-            interface simple. Je porte une attention particulière à l’accessibilité, au responsive
-            design et à la qualité du code.
+            Mon stage m'a permis de développer mes compétences techniques, ainsi que mon sens du travail en équipe et ma capacité à m'adapter à la vie en entreprise.
+          </p>
+          <p>
+            Je suis également passionné par les nouvelles technologies et j'aime apprendre de nouvelles compétences.
+            Je me tiens aussi au courant des dernières actualités du numérique et de l'informatique, afin d'être toujours à jour sur les évolutions du secteur.
           </p>
           <div class="keywords" aria-label="Mots-clés">
-            <span>Créativité</span><span>Rigueur</span><span>Autonomie</span><span>Esprit d’équipe</span>
+            <span>Rigueur</span><span>Autonomie  </span><span>Esprit d'équipe</span><span>Adaptation</span>
           </div>
         </div>
       </div>
