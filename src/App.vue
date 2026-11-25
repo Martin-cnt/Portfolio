@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 
 const menuOpen = ref(false)
+const isSending = ref(false)
+const formFeedback = ref('')
+const hasFormError = ref(false)
 const cvUrl = '/Portfolio/CUINET_Martin_CV.pdf'
 const photoUrl = `${import.meta.env.BASE_URL}Photo_CV.jpg`
 
@@ -43,6 +46,43 @@ const skills = [
 
 function closeMenu() {
   menuOpen.value = false
+}
+
+async function sendMessage(event) {
+  const form = event.target
+  const formData = Object.fromEntries(new FormData(form).entries())
+
+  isSending.value = true
+  formFeedback.value = ''
+  hasFormError.value = false
+
+  try {
+    const response = await fetch('https://formsubmit.co/ajax/martincuinet2006@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    const result = await response.json()
+
+    const submissionAccepted =
+      result.success === true || result.success === 'true' || result.ok === true
+
+    if (!response.ok || !submissionAccepted) {
+      throw new Error(result.message || 'Le service de messagerie a refusé le message.')
+    }
+
+    form.reset()
+    formFeedback.value = 'Message envoyé avec succès.'
+  } catch (error) {
+    console.error("Erreur lors de l'envoi du formulaire :", error)
+    hasFormError.value = true
+    formFeedback.value = 'Échec de l’envoi. Vérifier la connexion et réessayer.'
+  } finally {
+    isSending.value = false
+  }
 }
 </script>
 
@@ -206,7 +246,7 @@ function closeMenu() {
             <a href="https://www.linkedin.com/in/martin-cuinet-bbba313bb/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
         </div>
-        <form class="contact-form" action="https://formsubmit.co/martincuinet2006@gmail.com" method="POST">
+        <form class="contact-form" @submit.prevent="sendMessage">
           <label for="name">Nom Prénom</label>
           <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom prénom" required />
           <label for="email">Adresse e-mail</label>
@@ -215,8 +255,14 @@ function closeMenu() {
           <input id="subject" name="_subject" type="text" placeholder="Objet de votre message" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea>
-          <button class="button button-primary" type="submit">Envoyer le message <span aria-hidden="true">↗</span></button>
+          <button class="button button-primary" type="submit" :disabled="isSending">
+            {{ isSending ? 'Envoi en cours…' : 'Envoyer le message' }}
+            <span aria-hidden="true">↗</span>
+          </button>
           <p class="form-note">Les informations saisies sont utilisées uniquement pour répondre.</p>
+          <p v-if="formFeedback" class="form-note form-feedback" :class="{ 'form-error': hasFormError }" role="status" aria-live="polite">
+            {{ formFeedback }}
+          </p>
         </form>
       </div>
     </section>

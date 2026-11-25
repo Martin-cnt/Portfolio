@@ -118,7 +118,10 @@ h1 em {
 input, textarea { width: 100%; padding: 13px 14px; border: 1px solid var(--line); background: var(--paper); font: inherit; resize: vertical; }
 input:focus, textarea:focus { outline: 2px solid var(--accent-dark); outline-offset: 2px; }
 .contact-form .button { margin-top: 12px; justify-self: start; }
+.contact-form .button:disabled { cursor: wait; opacity: .7; }
 .form-note { color: var(--muted); font-size: .75rem; margin: 8px 0 0; }
+.form-feedback:not(.form-error) { color: #176b3a; }
+.form-error { color: #b42318; }
 .footer { background: var(--dark); color: #b7c3c4; padding: 24px 0; font-size: .8rem; }
 .footer-content { display: flex; justify-content: space-between; }
 .footer a:hover { color: var(--accent); }
