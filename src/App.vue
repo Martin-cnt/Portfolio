@@ -174,19 +174,21 @@ function closeMenu() {
     <section id="parcours" class="section section-light">
       <div class="container two-columns">
         <div>
-          <p class="eyebrow">04 · Parcours & veille</p>
-          <h2>Apprendre, pratiquer, partager.</h2>
+          <p class="eyebrow">04 · Parcours</p>
+          <h2>Ma formation</h2>
         </div>
         <div class="timeline">
           <article>
-            <span>2024 — aujourd’hui</span>
-            <h3>Formation en informatique</h3>
-            <p>Nom de l’établissement · Ville</p>
+            <span>2024 — 2027</span>
+            <h3>BUT Informatique</h3>
+            <p><strong>IUT Nord Franche-Comté · Belfort</strong>
+              <br><em>Parcours A : Réalisation d’applications, coloration Data/IA</em></p>
           </article>
           <article>
-            <span>Veille actuelle</span>
-            <h3>Développement web responsable</h3>
-            <p>Accessibilité, performances et bonnes pratiques front-end.</p>
+            <span>2021 — 2024</span>
+            <h3>Baccalauréat général</h3>
+            <p><strong>Lycée Louis Aragon · Héricourt</strong>
+              <br><em>Spécialités mathématiques et Anglais monde contemporain (AMC).</em></p>
           </article>
         </div>
       </div>
