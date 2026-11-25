@@ -116,15 +116,14 @@ function closeMenu() {
         </div>
         <div class="prose">
           <p>
-            Étudiant en 3ᵉ année de BUT Informatique, j'aime comprendre un besoin et le transformer en application ou en site simple à utiliser. 
-            Je fais attention à la qualité du code et à l'accessibilité.
+            Étudiant en <strong>3ᵉ année de BUT Informatique</strong>, j'aime comprendre un besoin et le transformer en <strong>application</strong> ou en site<strong> simple à utiliser</strong>. 
+            Je fais attention à la <strong>qualité du code</strong> et à <strong>l'accessibilité</strong>.
           </p>
           <p>
-            Mon stage m'a permis de développer mes compétences techniques, ainsi que mon sens du travail en équipe et ma capacité à m'adapter à la vie en entreprise.
+            Mon <strong>stage</strong> m'a permis de développer mes <strong>compétences techniques</strong>, ainsi que mon sens du <strong>travail en équipe</strong> et ma capacité à <strong>m'adapter</strong> à la vie en entreprise.
           </p>
           <p>
-            Je suis également passionné par les nouvelles technologies et j'aime apprendre de nouvelles compétences.
-            Je me tiens aussi au courant des dernières actualités du numérique et de l'informatique, afin d'être toujours à jour sur les évolutions du secteur.
+            Passionné par les <strong>nouvelles technologies</strong>, je me tiens au courant des actualités du numérique et de l'informatique pour rester à jour sur les évolutions du secteur.
           </p>
           <div class="keywords" aria-label="Mots-clés">
             <span>Rigueur</span><span>Autonomie  </span><span>Esprit d'équipe</span><span>Adaptation</span>
