@@ -182,7 +182,7 @@ function closeMenu() {
             <span>2024 — 2027</span>
             <h3>BUT Informatique</h3>
             <p><strong>IUT Nord Franche-Comté · Belfort</strong>
-              <br><em>Parcours A : Réalisation d’applications, coloration Data/IA</em></p>
+              <br><em>Parcours A : Réalisation d’applications, coloration C</em></p>
           </article>
           <article>
             <span>2021 — 2024</span>
@@ -196,25 +196,27 @@ function closeMenu() {
 
     <section id="contact" class="section contact-section">
       <div class="container contact-grid">
-        <div>
+        <div class="contact-info">
           <p class="eyebrow">05 · Contact</p>
-          <h2>Un projet ou une opportunité ?<br /><em>Échangeons.</em></h2>
+          <h2>Une question ?<br /><em>Contactez-moi</em></h2>
           <p class="contact-intro">Je répondrai avec plaisir à votre message.</p>
-          <a class="email-link" href="mailto:prenom.nom@email.com">prenom.nom@email.com</a>
+          <a class="email-link" href="mailto:martincuinet2006@gmail.com">martincuinet2006@gmail.com</a>
           <div class="social-links">
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/Martin-cnt" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/martin-cuinet-bbba313bb/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
           </div>
         </div>
-        <form class="contact-form" @submit.prevent>
+        <form class="contact-form" action="https://formsubmit.co/martincuinet2006@gmail.com" method="POST">
           <label for="name">Nom Prénom</label>
-          <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required />
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Votre nom prénom" required />
           <label for="email">Adresse e-mail</label>
           <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@email.com" required />
+          <label for="subject">Objet</label>
+          <input id="subject" name="_subject" type="text" placeholder="Objet de votre message" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea>
           <button class="button button-primary" type="submit">Envoyer le message <span aria-hidden="true">↗</span></button>
-          <p class="form-note">Le formulaire sera à relier à un service d’envoi avant la mise en ligne.</p>
+          <p class="form-note">Les informations saisies sont utilisées uniquement pour répondre.</p>
         </form>
       </div>
     </section>
