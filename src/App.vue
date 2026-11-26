@@ -241,6 +241,7 @@ async function sendMessage(event) {
           <h2>Une question ?<br /><em>Contactez-moi</em></h2>
           <p class="contact-intro">Je répondrai avec plaisir à votre message.</p>
           <a class="email-link" href="mailto:martincuinet2006@gmail.com">martincuinet2006@gmail.com</a>
+          <h4 class="contact-reseau">Mes réseaux</h4>
           <div class="social-links">
             <a href="https://github.com/Martin-cnt" target="_blank" rel="noreferrer">GitHub ↗</a>
             <a href="https://www.linkedin.com/in/martin-cuinet-bbba313bb/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
@@ -259,10 +260,11 @@ async function sendMessage(event) {
             {{ isSending ? 'Envoi en cours…' : 'Envoyer le message' }}
             <span aria-hidden="true">↗</span>
           </button>
-          <p class="form-note">Les informations saisies sont utilisées uniquement pour répondre.</p>
           <p v-if="formFeedback" class="form-note form-feedback" :class="{ 'form-error': hasFormError }" role="status" aria-live="polite">
             {{ formFeedback }}
           </p>
+          <p class="form-note">Les informations saisies sont utilisées uniquement pour répondre.</p>
+          
         </form>
       </div>
     </section>
