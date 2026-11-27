@@ -36,12 +36,12 @@ const projects = [
 ]
 
 const skills = [
-  { name: 'HTML / CSS', level: 'Solide' },
-  { name: 'JavaScript / Vue.js', level: 'En progression' },
-  { name: 'Git / GitHub', level: 'Solide' },
-  { name: 'Conception responsive', level: 'Solide' },
-  { name: 'Méthode agile', level: 'En progression' },
-  { name: 'Communication', level: 'Solide' },
+  { name: 'Développement web', level: 'Vue.js · Node.js · JavaScript · HTML · CSS' },
+  { name: 'Programmation', level: 'Java · Python · C · PHP' },
+  { name: 'Bases de données', level: 'MySQL · phpMyAdmin · MongoDB' },
+  { name: 'Outils', level: 'Git · GitHub · N8N · IntelliJ · Docker' },
+  { name: 'Gestion de projet', level: 'Cahier des charges · Trello' },
+  { name: 'Langues', level: 'Anglais (B2)' },
 ]
 
 function closeMenu() {
@@ -165,6 +165,7 @@ async function sendMessage(event) {
           <p>
             Passionné par les <strong>nouvelles technologies</strong>, je me tiens au courant des actualités du numérique et de l'informatique pour rester à jour sur les évolutions du secteur.
           </p>
+          <h4 class="quality">Mes qualités</h4>
           <div class="keywords" aria-label="Mots-clés">
             <span>Rigueur</span><span>Autonomie  </span><span>Esprit d'équipe</span><span>Adaptation</span>
           </div>
@@ -200,8 +201,8 @@ async function sendMessage(event) {
       <div class="container two-columns">
         <div>
           <p class="eyebrow eyebrow-light">03 · Compétences</p>
-          <h2>Ce que je peux apporter à votre équipe.</h2>
-          <p class="muted">Les niveaux sont indicatifs : l’important est de continuer à apprendre.</p>
+          <h2>Mes compétences</h2>
+          <p class="muted">Compétences acquises en cours, en projet et en stage.</p>
         </div>
         <div class="skills-list">
           <div v-for="skill in skills" :key="skill.name" class="skill">
