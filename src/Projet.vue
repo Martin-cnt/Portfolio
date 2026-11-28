@@ -84,20 +84,18 @@ function previous() {
 
       <section class="carousel" aria-roledescription="carrousel" aria-label="Captures d’écran du projet">
         <div class="carousel-stage">
-          <Transition name="carousel-fade" mode="out-in">
-            <figure :key="current" class="carousel-slide">
-              <button
-                ref="imageButton"
-                class="carousel-image-button"
-                type="button"
-                aria-label="Afficher l’image en grand format"
-                @click="openImage"
-              >
-                <img :src="images[current].src" :alt="images[current].alt" />
-              </button>
-              <figcaption>{{ images[current].description }}</figcaption>
-            </figure>
-          </Transition>
+          <figure class="carousel-slide">
+            <button
+              ref="imageButton"
+              class="carousel-image-button"
+              type="button"
+              aria-label="Afficher l’image en grand format"
+              @click="openImage"
+            >
+              <img :src="images[current].src" :alt="images[current].alt" />
+            </button>
+            <figcaption>{{ images[current].description }}</figcaption>
+          </figure>
           <div v-if="images.length > 1" class="carousel-arrows">
             <button class="carousel-button" type="button" aria-label="Image précédente" @click="previous">←</button>
             <button class="carousel-button" type="button" aria-label="Image suivante" @click="next">→</button>
